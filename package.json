@@ -9,9 +9,10 @@
   },
   "browserslist": "last 10 versions, not dead",
 
+
   "scripts": {
-    "dev": "parcel index.html",
-    "build:parcel": "parcel build index.html --dist-dir dist",
+    "dev": "parcel src/index.html",
+    "build:parcel": "parcel build src/index.html --dist-dir dist",
     "init-index-local": "node builder/init.js --local",
     "init-index-remote": "node builder/init.js --remote",
     "watch": "npm-run-all init-index-local dev",
