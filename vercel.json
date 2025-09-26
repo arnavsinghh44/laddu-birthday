@@ -1,0 +1,5 @@
+{
+  "buildCommand": "npm run init-index-local && npm run build:parcel",
+  "outputDirectory": "dist",
+  "framework": null
+}
