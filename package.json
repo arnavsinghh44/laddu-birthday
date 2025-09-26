@@ -8,12 +8,20 @@
     "main": false
   },
   "browserslist": "last 10 versions, not dead",
+  // "scripts": {
+  //   "watch:parcel": "parcel src/index.html",
+  //   "build:parcel": "parcel build src/index.html",
+  //   "init-index-local": "node builder/init.js --local",
+  //   "init-index-remote": "node builder/init.js --remote",
+  //   "watch": "npm-run-all init-index-local watch:parcel",
+  //   "build": "npm-run-all init-index-remote build:parcel"
+  // }
   "scripts": {
-    "watch:parcel": "parcel src/index.html",
-    "build:parcel": "parcel build src/index.html",
+    "dev": "parcel index.html",
+    "build:parcel": "parcel build index.html --dist-dir dist",
     "init-index-local": "node builder/init.js --local",
     "init-index-remote": "node builder/init.js --remote",
-    "watch": "npm-run-all init-index-local watch:parcel",
+    "watch": "npm-run-all init-index-local dev",
     "build": "npm-run-all init-index-remote build:parcel"
   },
   "repository": {
